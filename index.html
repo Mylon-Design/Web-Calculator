@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="upbtn">C</button>
+                <button onclick="appendToDisplay('±')">±</button>
+                <button onclick="appendToDisplay('%')">%</button>
+                <button onclick="appendToDisplay('/')" class="simbtn">/</button>
+                <button onclick="appendToDisplay('8')" class="numbtn">8</button>
+                <button onclick="appendToDisplay('7')" class="numbtn">7</button>
+                <button onclick="appendToDisplay('9')" class="numbtn">9</button>
+                <button onclick="appendToDisplay('*')" class="simbtn">*</button>
+                <button onclick="appendToDisplay('4')" class="numbtn">4</button>
+                <button onclick="appendToDisplay('5')" class="numbtn">5</button>
+                <button onclick="appendToDisplay('6')" class="numbtn">6</button>
+                <button onclick="appendToDisplay('-')" class="simbtn">-</button>
+                <button onclick="appendToDisplay('1')" class="numbtn">1</button>
+                <button onclick="appendToDisplay('2')" class="numbtn">2</button>
+                <button onclick="appendToDisplay('3')" class="numbtn">3</button>
+                <button onclick="appendToDisplay('+')" class="simbtn">+</button>
+                <button onclick="appendToDisplay('0')" class="numbtn zero">0</button>
+                <button onclick="appendToDisplay('.')" class="numbtn">.</button>
+                <button onclick="calculateResult()" class="simbtn">=</button>
+            </div>
+        </div>
+    </div>
+
+<footer>Developed by &copy;Maylon Evangelista - Git-hub: Mylon-Design</footer>
+
+    <script src="calculator.js"></script>
+ </body>
+</html>
